@@ -77,7 +77,9 @@ a {
 }
 
 .brand img {
-  filter: drop-shadow(0 6px 12px rgba(80, 132, 62, 0.16));
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
 }
 
 .brand strong {
@@ -314,7 +316,7 @@ h3 {
   display: grid;
   gap: 20px;
   align-content: start;
-  padding: 14px 14px 22px;
+  padding: 18px 18px 22px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(246, 251, 233, 0.72)),
     var(--white);
@@ -324,21 +326,23 @@ h3 {
 }
 
 .hero-icon-card {
-  overflow: hidden;
-  padding: 8px;
+  display: grid;
+  place-items: center;
+  max-width: 220px;
+  margin: 0 auto;
+  padding: 14px;
   background:
-    linear-gradient(160deg, rgba(255, 255, 255, 0.92), rgba(227, 248, 246, 0.34)),
-    var(--cream);
-  border: 1px solid rgba(213, 232, 189, 0.88);
+    linear-gradient(160deg, rgba(255, 255, 255, 0.74), rgba(246, 251, 233, 0.58)),
+    rgba(255, 250, 240, 0.54);
+  border: 1px solid rgba(213, 232, 189, 0.66);
   border-radius: var(--radius);
 }
 
 .hero-icon-card img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  max-width: 180px;
   height: auto;
-  object-fit: cover;
-  border-radius: 6px;
+  object-fit: contain;
 }
 
 dl {
@@ -699,6 +703,15 @@ dd {
   .text-panel,
   .event-summary {
     padding: 18px;
+  }
+
+  .hero-icon-card {
+    max-width: 188px;
+    padding: 12px;
+  }
+
+  .hero-icon-card img {
+    max-width: 154px;
   }
 }
 
