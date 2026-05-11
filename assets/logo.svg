@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">こあそび coasobi ロゴ</title>
+  <desc id="desc">やさしい緑とオレンジの丸を組み合わせた、親子のような印象のロゴ</desc>
+  <rect width="240" height="240" rx="56" fill="#fff7e8"/>
+  <circle cx="96" cy="98" r="50" fill="#8fc9a3"/>
+  <circle cx="145" cy="118" r="42" fill="#f4a261"/>
+  <circle cx="96" cy="92" r="11" fill="#3f5f4b"/>
+  <circle cx="144" cy="112" r="9" fill="#7c4c22"/>
+  <path d="M78 132c15 19 44 20 63 2" fill="none" stroke="#3f5f4b" stroke-width="10" stroke-linecap="round"/>
+  <path d="M123 155c12 12 34 12 48-2" fill="none" stroke="#7c4c22" stroke-width="9" stroke-linecap="round"/>
+  <path d="M62 174c20 16 45 24 72 24 24 0 47-6 66-19" fill="none" stroke="#d9b36a" stroke-width="10" stroke-linecap="round"/>
+</svg>
