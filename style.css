@@ -1,6 +1,6 @@
 :root {
-  --leaf: #86bf3f;
-  --leaf-bright: #a8d957;
+  --leaf: #92c94f;
+  --leaf-bright: #b7df68;
   --leaf-soft: #edf8d7;
   --leaf-pale: #f6fbe9;
   --moss: #4f8b4d;
@@ -16,7 +16,7 @@
   --ink: #26382d;
   --muted: #607261;
   --line: #dceac8;
-  --shadow: 0 18px 38px rgba(80, 132, 62, 0.13);
+  --shadow: 0 18px 38px rgba(96, 145, 69, 0.11);
   --shadow-soft: 0 10px 24px rgba(82, 122, 62, 0.08);
   --radius: 8px;
   --max: 1120px;
@@ -142,7 +142,7 @@ a {
 .hero {
   position: relative;
   overflow: hidden;
-  padding-top: 48px;
+  padding-top: 44px;
 }
 
 .hero::before,
@@ -213,7 +213,7 @@ h3 {
 
 h1 {
   color: var(--shade);
-  font-size: clamp(2.35rem, 11vw, 4.8rem);
+  font-size: clamp(2.15rem, 8.8vw, 4.1rem);
 }
 
 h2 {
@@ -229,7 +229,7 @@ h3 {
 .lead {
   margin: 14px 0 0;
   color: #385f3e;
-  font-size: clamp(1.08rem, 4vw, 1.5rem);
+  font-size: clamp(1.06rem, 3.6vw, 1.42rem);
   font-weight: 700;
 }
 
@@ -282,13 +282,14 @@ h3 {
 }
 
 .button-primary {
-  background: linear-gradient(180deg, var(--leaf-bright), var(--leaf));
+  background: linear-gradient(180deg, #bee779, #91cc4f);
   color: #173820;
-  box-shadow: 0 14px 28px rgba(86, 140, 39, 0.24);
+  box-shadow: 0 12px 24px rgba(112, 160, 58, 0.22);
 }
 
 .button-primary:hover {
-  box-shadow: 0 16px 32px rgba(86, 140, 39, 0.29);
+  background: linear-gradient(180deg, #c7ec83, #9bd45a);
+  box-shadow: 0 14px 28px rgba(112, 160, 58, 0.25);
 }
 
 .button-secondary {
@@ -313,54 +314,88 @@ h3 {
 }
 
 .hero-panel {
+  position: relative;
+  overflow: hidden;
   display: grid;
-  gap: 20px;
-  align-content: start;
-  padding: 18px 18px 22px;
+  gap: 12px;
+  align-content: center;
+  justify-items: center;
+  min-height: 340px;
+  padding: 30px 24px 28px;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(246, 251, 233, 0.72)),
-    var(--white);
-  border: 1px solid rgba(213, 232, 189, 0.9);
+    radial-gradient(circle at 22% 18%, rgba(255, 255, 255, 0.9) 0 13%, rgba(255, 255, 255, 0) 14%),
+    radial-gradient(circle at 78% 32%, rgba(227, 248, 246, 0.72) 0 16%, rgba(227, 248, 246, 0) 17%),
+    linear-gradient(165deg, rgba(255, 253, 247, 0.84), rgba(246, 251, 233, 0.88)),
+    var(--leaf-pale);
+  border: 1px solid rgba(213, 232, 189, 0.62);
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  box-shadow: 0 16px 32px rgba(96, 145, 69, 0.1);
+}
+
+.hero-panel::before,
+.hero-panel::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.hero-panel::before {
+  right: -38px;
+  top: -24px;
+  width: 140px;
+  height: 110px;
+  background: linear-gradient(135deg, rgba(183, 223, 104, 0.22), rgba(255, 255, 255, 0));
+  border-radius: 64% 36% 58% 42% / 44% 58% 42% 56%;
+  transform: rotate(-18deg);
+}
+
+.hero-panel::after {
+  left: -30px;
+  bottom: 22px;
+  width: 160px;
+  height: 92px;
+  background: linear-gradient(135deg, rgba(100, 205, 208, 0.16), rgba(255, 255, 255, 0));
+  border-radius: 58% 42% 70% 30% / 50% 48% 52% 50%;
+  transform: rotate(12deg);
 }
 
 .hero-icon-card {
+  position: relative;
+  z-index: 1;
   display: grid;
   place-items: center;
-  max-width: 220px;
+  width: min(100%, 240px);
   margin: 0 auto;
-  padding: 14px;
-  background:
-    linear-gradient(160deg, rgba(255, 255, 255, 0.74), rgba(246, 251, 233, 0.58)),
-    rgba(255, 250, 240, 0.54);
-  border: 1px solid rgba(213, 232, 189, 0.66);
-  border-radius: var(--radius);
+  padding: 10px;
+  background: radial-gradient(circle at 50% 52%, rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0) 68%);
 }
 
 .hero-icon-card img {
   width: 100%;
-  max-width: 180px;
+  max-width: 192px;
   height: auto;
   object-fit: contain;
 }
 
-dl {
-  display: grid;
-  gap: 12px;
-  margin: 0 8px;
+.hero-visual-copy,
+.hero-visual-note {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  text-align: center;
 }
 
-dt {
-  color: var(--muted);
-  font-size: 0.8rem;
-  font-weight: 800;
-}
-
-dd {
-  margin: 2px 0 0;
+.hero-visual-copy {
   color: var(--shade);
+  font-size: 1.12rem;
   font-weight: 800;
+}
+
+.hero-visual-note {
+  max-width: 250px;
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.7;
 }
 
 .section-heading {
@@ -705,13 +740,26 @@ dd {
     padding: 18px;
   }
 
+  .hero-panel {
+    min-height: auto;
+    padding: 24px 18px 22px;
+  }
+
   .hero-icon-card {
-    max-width: 188px;
+    width: min(100%, 188px);
     padding: 12px;
   }
 
   .hero-icon-card img {
     max-width: 154px;
+  }
+
+  .hero-visual-copy {
+    font-size: 1.04rem;
+  }
+
+  .hero-visual-note {
+    font-size: 0.9rem;
   }
 }
 
