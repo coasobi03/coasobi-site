@@ -262,6 +262,10 @@ h3 {
   justify-content: center;
 }
 
+.detail-card .cta-row {
+  margin-top: 16px;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -560,7 +564,7 @@ h3 {
   padding: 20px 20px 20px 74px;
 }
 
-.flow-list span {
+.flow-list li > span {
   position: absolute;
   top: 20px;
   left: 20px;
