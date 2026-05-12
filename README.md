@@ -21,42 +21,45 @@
 リンク類は `data/site-config.js` にまとめています。公開前に以下を正式URLへ差し替えてください。
 
 - `lineUrl`: 公式LINE URL
-- `googleFormUrl`: Googleフォーム URL
+- `googleFormUrl`: お問い合わせURL（Googleフォーム）
 - `googleCalendarEmbedUrl`: Googleカレンダー埋め込みURL
 - `instagramUrl`: Instagram URL
+- `threadsUrl`: Threads URL
 
 ### 公式LINE URL
 
 `data/site-config.js` の `lineUrl` を正式な公式LINE URLに変更します。
 
-### Googleフォーム URL
+### お問い合わせURL
 
-`data/site-config.js` の `googleFormUrl` を予約・問い合わせ用フォームのURLに変更します。
+`data/site-config.js` の `googleFormUrl` をお問い合わせ用GoogleフォームのURLに変更します。
 
 ### Googleカレンダー埋め込みURL
 
 Googleカレンダーの「設定と共有」から埋め込み用URLを取得し、`data/site-config.js` の `googleCalendarEmbedUrl` に貼り付けます。
 
-仮URLのままの場合、サイト上では「カレンダー準備中」と表示されます。
+イベント日時、一時預かりの空き状況、予約済み予定をカレンダーでお知らせする想定です。仮URLのままの場合、サイト上では「予定カレンダー準備中」と表示されます。
 
 ### Instagram URL
 
 `data/site-config.js` の `instagramUrl` を正式なInstagramアカウントURLに変更します。
 
+### Threads URL
+
+`data/site-config.js` の `threadsUrl` を正式なThreadsアカウントURLに変更します。
+
 ## 更新運用
 
-普段の予定更新や問い合わせ対応は、Googleカレンダー、公式LINE、Googleフォームで行う想定です。通常運用ではHTMLを直接編集する必要はありません。
+普段の予定更新や問い合わせ対応は、Googleカレンダー、公式LINE、お問い合わせ、Instagram、Threadsで行う想定です。通常運用ではHTMLを直接編集する必要はありません。
 
 ## publicリポジトリでの注意
 
 このリポジトリはpublic公開を想定しています。個人情報、問い合わせ内容、お子さまの名前・年齢・住所・連絡先・相談内容などは絶対に書き込まないでください。
 
-## 公開前に確認するTODO
+## 主な掲載情報
 
-`data/site-config.js` の `todos` に、現サイト内で表記ゆれがある項目を残しています。
-
-- 対象年齢
-- オンライン相談の料金表記
-- 支払い方法
-- イベント開催曜日
-- 認可外保育施設としての申請状況・表記内容
+- 一時預かり: 1時間1,000円
+- オンラインカウンセリング: 1時間1,000円
+- イベント: 1組100円程度（場所代実費）
+- 支払い方法: 現金、イチコ、ことら送金、振り込み（オンラインカウンセリングは現金を除く）
+- 一時預かりとイベントの予定は、Googleカレンダー、Instagram、Threadsでお知らせします。
