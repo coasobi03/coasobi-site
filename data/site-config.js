@@ -19,13 +19,14 @@ window.COASOBI_CONFIG = {
 
   priceChildcare: "1時間 1,000円",
   priceOnlineCounseling: "1時間 1,000円",
+  pricePreMeeting: "30分 500円",
   eventFee: "1組100円程度（場所代実費）",
-  paymentMethods: "現金、イチコ、ことら送金、振り込み（振込手数料は利用者さま負担）",
+  paymentMethods: "ご希望に合わせて、現金、イチコ、ことら送金、振り込み（振込手数料は利用者さま負担）でお支払いいただけます。",
   onlinePaymentMethods: "イチコ、ことら送金、振り込み（振込手数料は利用者さま負担）",
 
   notes: [
     "公式LINE、お問い合わせ、Googleカレンダー、Instagram、ThreadsのURLはdata/site-config.jsで管理しています。",
-    "個人情報、問い合わせ内容、子どもの情報はこのリポジトリに保存しないでください。",
+    "個人情報、問い合わせ内容、子どもの情報は公開せず、厳重に管理します。",
     "イベントと一時預かりの予定はGoogleカレンダー、Instagram、Threadsでお知らせします。"
   ],
 
